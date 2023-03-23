@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+/* Default styles */
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 18px;
+  color: hsl(224, 30%, 27%);
+  background-color: hsl(221, 100%, 96%);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  color: var(--neutral-dark-gray-blue);
+}
+
+p {
+  font-weight: 500;
+  color: var(--neutral-dark-gray-blue);
+}
+
+/* Colors */
+:root {
+  --primary-light-red: hsl(0, 100%, 67%);
+  --primary-orangey-yellow: hsl(39, 100%, 56%);
+  --primary-green-teal: hsl(166, 100%, 37%);
+  --primary-cobalt-blue: hsl(234, 85%, 45%);
+  --gradient-light-slate-blue: hsl(252, 100%, 67%);
+  --gradient-light-royal-blue: hsl(241, 81%, 54%);
+  --circle-violet-blue: hsla(256, 72%, 46%, 1);
+  --circle-persian-blue: hsla(241, 72%, 46%, 0);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-pale-blue: hsl(221, 100%, 96%);
+  --neutral-light-lavender: hsl(241, 100%, 89%);
+  --neutral-dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+/* Layout */
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+
+.card__first,
+.card__second {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 35px;
+}
+
+.card__first{
+  background: linear-gradient(to bottom, var(--gradient-light-slate-blue), var(--gradient-light-royal-blue));
+  color: var(--neutral-white);
+  border-radius: 25px;
+}
+
+
+.card__circle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  margin: 30px auto;
+  background: linear-gradient(to bottom, var(--circle-violet-blue), var(--circle-persian-blue));
+}
+
+
+.card__circle-text,
+.card__title-one,
+.card__message-description {
+  opacity: .6;
+}
+
+.card__title-two {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.card__score {
+  margin-top: 24px;
+}
+
+.card__message {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.card__category {
+  width: 80%;
+  padding: 15px 15px;
+  margin: 5px 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
+  color: #777;
+}
+
+.icons {
+  margin-right: 10px;
+}
+
+/* Typography */
+.card__title {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 5px;
+}
+
+.card__circle-score {
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.card__circle-text{
+  font-size: 16px;
+}
+
+
+.card__category-score {
+  margin-left: 30px;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+
+.card__category-tscore {
+  opacity: .5;
+}
+
+.card__message-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.card__message-description {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+
+.reaction {
+  color: var(--primary-light-red);
+}
+
+.memory {
+  color: var(--primary-orangey-yellow);
+  width: 62.34px;
+}
+
+.verbal {
+  color: var(--primary-green-teal);
+  width: 62.34px;
+  display: flex;
+}
+
+.visual {
+  color: var( --primary-cobalt-blue);
+  width: 62.34px;
+  display: flex;
+}
+
+.red {
+  background-color: rgba(255, 0, 0, 0.050);
+}
+
+.orange {
+  background-color: rgba(255, 166, 0, 0.050);
+}
+
+.green-teal {
+  background-color: rgba(0, 128, 107, 0.050);
+}
+
+.cobalt-blue {
+  background-color: rgba(0, 0, 255, 0.050);
+}
+
+/* Button styles */
+button {
+  margin-top: 30px;
+    padding: 15px 78px;
+    font-size: 15px;
+    background: var(--neutral-dark-gray-blue);
+    color: var(--neutral-white);
+    font-weight: 700;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+  /* background: var(--gradient-light-slate-blue); */
+  background-image: linear-gradient(to bottom, var(--gradient-light-slate-blue), var(--gradient-light-royal-blue));
+}
+
+/* Gradient styles */
+.gradient--light-slate-blue {
+  background: var(--gradient-light-slate-blue);
+}
+
+.gradient--light-royal-blue {
+  background: var(--gradient-light-royal-blue);
+  background-image: linear-gradient(to right bottom, var(--gradient-light-royal-blue), var(--gradient-light-slate-blue));
+}
