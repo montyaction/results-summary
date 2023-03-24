@@ -6,7 +6,7 @@ body {
   font-size: 18px;
   color: hsl(224, 30%, 27%);
   background-color: hsl(221, 100%, 96%);
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   place-items: center;
 }
